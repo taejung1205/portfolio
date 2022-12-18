@@ -6,6 +6,10 @@ import Section1 from "~/components/Section/Section1"
 import Section2 from "~/components/Section/Section2";
 import Section3 from "~/components/Section/Section3";
 import Section4 from "~/components/Section/Section4";
+import Section5 from "~/components/Section/Section5";
+import Section6 from "~/components/Section/Section6";
+import Section7 from "~/components/Section/Section7";
+import SectionFinal from "~/components/Section/SectionFinal";
 
 export default function Index() {
   const [scroll] = useWindowScroll();
@@ -17,6 +21,8 @@ export default function Index() {
   const scrollView3 = useScrollIntoView<HTMLDivElement>({offset: 0});
   const scrollView4 = useScrollIntoView<HTMLDivElement>({offset: 0});
   const scrollView5 = useScrollIntoView<HTMLDivElement>({offset: 0});
+  const scrollView6 = useScrollIntoView<HTMLDivElement>({offset: 0});
+  const scrollView7 = useScrollIntoView<HTMLDivElement>({offset: 0});
   
   return (
     <>
@@ -29,6 +35,13 @@ export default function Index() {
       <div ref={scrollView3.targetRef} />
       <Section4 />
       <div ref={scrollView4.targetRef} />
+      <Section5 />
+      <div ref={scrollView5.targetRef} />
+      <Section6 />
+      <div ref={scrollView6.targetRef} />
+      <Section7 />
+      <div ref={scrollView7.targetRef} />
+      <SectionFinal />
       <ScrollAffix 
       scrollIntoFuncs={[
         scrollView0.scrollIntoView,
@@ -37,6 +50,8 @@ export default function Index() {
         scrollView3.scrollIntoView,
         scrollView4.scrollIntoView,
         scrollView5.scrollIntoView,
+        scrollView6.scrollIntoView,
+        scrollView7.scrollIntoView,
       ]}
         screenWidth={width}
         isVisible={width > theme.breakpoints.sm}

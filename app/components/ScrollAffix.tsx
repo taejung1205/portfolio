@@ -23,7 +23,7 @@ import {
         sx={{
           fontFamily: "Noto Sans!important",
           cursor: "pointer",
-          textShadow: "1px 0 white, -1px 0 white, 0 1px white, 0 -1px white, 0.5px 0.5px white, -0.5px -0.5px white, -0.5px 0.5px white, 0.5px -0.5px white;"
+          //textShadow: "1px 0 white, -1px 0 white, 0 1px white, 0 -1px white, 0.5px 0.5px white, -0.5px -0.5px white, -0.5px 0.5px white, 0.5px -0.5px white;"
         }}
         onClick={scrollIntoFunc}
       >
@@ -87,7 +87,7 @@ import {
                 height: "fit-content",
                 alignItems: "stretch",
                 justifyContent: "space-between",
-                boxShadow: "1px 1px 4px #00000040",
+                boxShadow: "2px 2px 3px #00000040",
                 padding: "1px 30px 1px 30px",
                 borderRadius: 12,
                 [`& *`]: {
@@ -101,10 +101,12 @@ import {
                 sectionList={[
                   { text: "INTRO",},
                   { text: "ABOUT ME",},
-                  { text: "BUSINESS",},
-                  { text: "CULTURE",},
-                  { text: "PEOPLE",},
-                  { text: "DIRECTIONS",},
+                  { text: "MATHE TE",},
+                  { text: "EUICC TEST",},
+                  { text: "PETRUN",},
+                  { text: "EVOCLASS",},
+                  { text: "NEWBID",},
+                  { text: "OUTRO",},
                 ]}
               />
             </Box>

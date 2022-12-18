@@ -26,7 +26,7 @@ export default function Section2() {
         minHeight: "700px",
         background: "#FFFFFF",
         [`@media (max-width: ${theme.breakpoints.md}px)`]: {
-          minHeight: "1800px",
+          minHeight: "1750px",
         },
       })}
     >
@@ -38,7 +38,16 @@ export default function Section2() {
           },
         })}
       >
-        <Text weight={700} color={"#00054e"} size={60}>
+        <Text
+          weight={700}
+          color={"#00054e"}
+          size={60}
+          sx={{
+            [`@media (max-width: ${theme.breakpoints.md}px)`]: {
+              textAlign: "center",
+            },
+          }}
+        >
           ABOUT ME
         </Text>
 
