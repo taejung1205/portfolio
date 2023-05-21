@@ -157,8 +157,9 @@ export default function Section2() {
                     개발자 <br />
                     2022.07. ~ 2022.08. 화상교육 플랫폼 스타트업
                     '(주)트랜스버스' 프론트엔드 개발 인턴 <br />
-                    2022.09. ~ 2022.10. '(주)따바프레스'와 협업하여 공예품 경매
-                    서비스 '뉴비드' 개발
+                    2022.09. ~ 2022.10. '로파서울'과 협업하여 공예품 경매
+                    서비스 '뉴비드' 개발 <br />
+                    2023.01. ~ 2023.02. '로파서울'의 고객사 물류 처리를 위한 파트너 사이트 개발 
                   </Text>
                 </Box>
                 <Space w={30} h={30} />
@@ -198,8 +199,20 @@ export default function Section2() {
                         textDecoration: "none",
                       }}
                     >
-                      · Remix <br />
+                      · Remix 
                     </a>
+                    <br />
+                    <a
+                      href={"https://firebase.google.com/"}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        textDecoration: "none",
+                      }}
+                    >
+                      · Firebase
+                    </a>
+                    <br />
                     <a
                       href={"https://flutter.dev/"}
                       target="_blank"
@@ -208,9 +221,9 @@ export default function Section2() {
                         textDecoration: "none",
                       }}
                     >
-                      · Flutter <br />
+                      · Flutter
                     </a>
-
+                    <br />
                     <a
                       href={"https://www.java.com/"}
                       target="_blank"
@@ -219,8 +232,9 @@ export default function Section2() {
                         textDecoration: "none",
                       }}
                     >
-                      · Java <br />
+                      · Java
                     </a>
+                    <br />
                     <a
                       href={"https://unity.com/"}
                       target="_blank"
@@ -229,8 +243,9 @@ export default function Section2() {
                         textDecoration: "none",
                       }}
                     >
-                      · Unity <br />
+                      · Unity
                     </a>
+                    <br />
                     <a
                       href={"https://github.com/taejung1205"}
                       target="_blank"
@@ -239,7 +254,7 @@ export default function Section2() {
                         textDecoration: "none",
                       }}
                     >
-                      · Git <br />
+                      · Git 
                     </a>
                   </Text>
                 </Box>
