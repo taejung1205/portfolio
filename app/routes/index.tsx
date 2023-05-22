@@ -9,6 +9,7 @@ import Section4 from "~/components/Section/Section4";
 import Section5 from "~/components/Section/Section5";
 import Section6 from "~/components/Section/Section6";
 import Section7 from "~/components/Section/Section7";
+import Section8 from "~/components/Section/Section8";
 import SectionFinal from "~/components/Section/SectionFinal";
 
 export default function Index() {
@@ -23,6 +24,7 @@ export default function Index() {
   const scrollView5 = useScrollIntoView<HTMLDivElement>({offset: 0});
   const scrollView6 = useScrollIntoView<HTMLDivElement>({offset: 0});
   const scrollView7 = useScrollIntoView<HTMLDivElement>({offset: 0});
+  const scrollView8 = useScrollIntoView<HTMLDivElement>({offset: 0});
   
   return (
     <>
@@ -41,6 +43,8 @@ export default function Index() {
       <div ref={scrollView6.targetRef} />
       <Section7 />
       <div ref={scrollView7.targetRef} />
+      <Section8 />
+      <div ref={scrollView8.targetRef} />
       <SectionFinal />
       <ScrollAffix 
       scrollIntoFuncs={[
@@ -52,6 +56,7 @@ export default function Index() {
         scrollView5.scrollIntoView,
         scrollView6.scrollIntoView,
         scrollView7.scrollIntoView,
+        scrollView8.scrollIntoView
       ]}
         screenWidth={width}
         isVisible={width > theme.breakpoints.sm}

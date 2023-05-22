@@ -106,6 +106,7 @@ import {
                   { text: "PETRUN",},
                   { text: "EVOCLASS",},
                   { text: "NEWBID",},
+                  { text: "LOFA PARTNER",},
                   { text: "OUTRO",},
                 ]}
               />
