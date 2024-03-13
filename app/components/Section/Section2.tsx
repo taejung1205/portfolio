@@ -8,8 +8,6 @@ import {
   useMantineTheme,
 } from "@mantine/core";
 import { useViewportSize } from "@mantine/hooks";
-import { Link } from "react-router-dom";
-import { ReactiveSpace } from "../ReactiveSpace";
 
 export default function Section2() {
   const { width } = useViewportSize();
@@ -129,135 +127,12 @@ export default function Section2() {
                     flexGrow: 1,
                   }}
                 >
-                  <Text weight={700} color={"#00054e"} size={30}>
-                    EDUCATION
-                  </Text>
-                  <Space h={10} />
-                  <Text
-                    weight={400}
-                    color={"black"}
-                    size={width > 1500 ? 16 : 12}
-                  >
-                    2014.03. ~ 2017.02. 세종국제고등학교 <br />
-                    2017.03. ~ 서울대학교 자유전공학부 (컴퓨터공학 주전공,
-                    정보문화학 연합전공) <br />
-                  </Text>
+                  <EducationBox width={width} />
                   <Space h={50} />
-                  <Text weight={700} color={"#00054e"} size={30}>
-                    CAREER
-                  </Text>
-                  <Space h={10} />
-                  <Text
-                    weight={400}
-                    color={"black"}
-                    size={width > 1500 ? 16 : 12}
-                  >
-                    2021.07. ~ 2021.08. '삼성전자(주)' 무선사업부 인턴 <br />
-                    2021.11. ~ 2022.05. 애견인 종합 플랫폼 스타트업 '(주)펫런'
-                    개발자 <br />
-                    2022.07. ~ 2022.08. 화상교육 플랫폼 스타트업
-                    '(주)트랜스버스' 프론트엔드 개발 인턴 <br />
-                    2022.09. ~ 2022.10. '로파서울'과 협업하여 공예품 경매
-                    서비스 '뉴비드' 개발 <br />
-                    2023.01. ~ 2023.02. '로파서울'의 고객사 물류 처리를 위한 파트너 사이트 개발 
-                  </Text>
+                  <CareerBox width={width} />
                 </Box>
                 <Space w={30} h={30} />
-                <Box
-                  sx={{
-                    flexGrow: 1,
-                  }}
-                >
-                  <Text weight={700} color={"#00054e"} size={30}>
-                    SKILLS
-                  </Text>
-                  <Space h={20} />
-                  <Text
-                    weight={700}
-                    color={"blue"}
-                    size={width > 1500 ? 24 : 20}
-                    sx={{
-                      lineHeight: 1.8,
-                    }}
-                  >
-                    <a
-                      href={"https://reactjs.org/"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{
-                        textDecoration: "none",
-                      }}
-                    >
-                      · React.js{" "}
-                    </a>
-                    <br />
-                    <a
-                      href={"https://remix.run/"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{
-                        textDecoration: "none",
-                      }}
-                    >
-                      · Remix 
-                    </a>
-                    <br />
-                    <a
-                      href={"https://firebase.google.com/"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{
-                        textDecoration: "none",
-                      }}
-                    >
-                      · Firebase
-                    </a>
-                    <br />
-                    <a
-                      href={"https://flutter.dev/"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{
-                        textDecoration: "none",
-                      }}
-                    >
-                      · Flutter
-                    </a>
-                    <br />
-                    <a
-                      href={"https://www.java.com/"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{
-                        textDecoration: "none",
-                      }}
-                    >
-                      · Java
-                    </a>
-                    <br />
-                    <a
-                      href={"https://unity.com/"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{
-                        textDecoration: "none",
-                      }}
-                    >
-                      · Unity
-                    </a>
-                    <br />
-                    <a
-                      href={"https://github.com/taejung1205"}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{
-                        textDecoration: "none",
-                      }}
-                    >
-                      · Git 
-                    </a>
-                  </Text>
-                </Box>
+                <SkillsBox width={width} />
               </Box>
             ) : (
               <></>
@@ -316,116 +191,12 @@ export default function Section2() {
             >
               <Space h={30} />
               <Box>
-                <Text weight={700} color={"#00054e"} size={30}>
-                  EDUCATION
-                </Text>
-                <Space h={10} />
-                <Text
-                  weight={400}
-                  color={"black"}
-                  size={width > 1500 ? 16 : 12}
-                >
-                  2014.03. ~ 2017.02. 세종국제고등학교 <br />
-                  2017.03. ~ 서울대학교 자유전공학부 (컴퓨터공학 주전공,
-                  정보문화학 연합전공) <br />
-                </Text>
+                <EducationBox width={width} />
                 <Space h={50} />
-                <Text weight={700} color={"#00054e"} size={30}>
-                  CAREER
-                </Text>
-                <Space h={10} />
-                <Text
-                  weight={400}
-                  color={"black"}
-                  size={width > 1500 ? 16 : 12}
-                >
-                  2021.07. ~ 2021.08. '삼성전자(주)' 무선사업부 인턴 <br />
-                  2021.11. ~ 2022.05. 애견인 종합 플랫폼 스타트업 '(주)펫런'
-                  개발자 <br />
-                  2022.07. ~ 2022.08. 화상교육 플랫폼 스타트업 '(주)트랜스버스'
-                  프론트엔드 개발 인턴 <br />
-                  2022.09. ~ 2022.10. '(주)따바프레스'와 협업하여 공예품 경매
-                  서비스 '뉴비드' 개발
-                </Text>
+                <CareerBox width={width} />
               </Box>
               <Space w={30} h={30} />
-              <Box>
-                <Text weight={700} color={"#00054e"} size={30}>
-                  SKILLS
-                </Text>
-                <Space h={20} />
-                <Text
-                  weight={700}
-                  color={"blue"}
-                  size={width > 1500 ? 24 : 20}
-                  sx={{
-                    lineHeight: 1.8,
-                  }}
-                >
-                  <a
-                    href={"https://reactjs.org/"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      textDecoration: "none",
-                    }}
-                  >
-                    · React.js{" "}
-                  </a>
-                  <br />
-                  <a
-                    href={"https://remix.run/"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      textDecoration: "none",
-                    }}
-                  >
-                    · Remix <br />
-                  </a>
-                  <a
-                    href={"https://flutter.dev/"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      textDecoration: "none",
-                    }}
-                  >
-                    · Flutter <br />
-                  </a>
-
-                  <a
-                    href={"https://www.java.com/"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      textDecoration: "none",
-                    }}
-                  >
-                    · Java <br />
-                  </a>
-                  <a
-                    href={"https://unity.com/"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      textDecoration: "none",
-                    }}
-                  >
-                    · Unity <br />
-                  </a>
-                  <a
-                    href={"https://github.com/taejung1205"}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      textDecoration: "none",
-                    }}
-                  >
-                    · Git <br />
-                  </a>
-                </Text>
-              </Box>
+              <SkillsBox width={width} />
             </Box>
           ) : (
             <></>
@@ -434,4 +205,165 @@ export default function Section2() {
       </Box>
     </Box>
   );
+}
+
+function EducationBox({ width }: { width: number }) {
+  return <><Text weight={700} color={"#00054e"} size={30}>
+    EDUCATION
+  </Text>
+    <Space h={10} />
+    <Text
+      weight={400}
+      color={"black"}
+      size={width > 1500 ? 16 : 12}
+    >
+      2014.03. ~ 2017.02. 세종국제고등학교 <br />
+      2017.03. ~ 2024.02. 서울대학교 자유전공학부 (컴퓨터공학 주전공,
+      정보문화학 부전공) <br />
+    </Text></>
+}
+
+function CareerBox({ width }: { width: number }) {
+  return (<>
+    <Text weight={700} color={"#00054e"} size={30}>
+      CAREER
+    </Text>
+    <Space h={10} />
+    <Text
+      weight={400}
+      color={"black"}
+      size={width > 1500 ? 16 : 12}
+    >
+      2021.07. ~ 2021.08. '삼성전자(주)' 무선사업부 인턴 <br />
+      2021.11. ~ 2022.05. 애견인 종합 플랫폼 스타트업 '(주)펫런'
+      개발자 <br />
+      2022.07. ~ 2022.08. 화상교육 플랫폼 스타트업
+      '(주)트랜스버스' 프론트엔드 개발 인턴 <br />
+      2022.09. ~ 2022.10. '로파서울'과 협업하여 공예품 경매
+      서비스 '뉴비드' 개발 <br />
+      2023.01. ~ 2023.02. '로파서울'의 고객사 물류 처리를 위한 파트너 사이트 개발 <br />
+      2023.08. ~ 2024.02. 블록체인 기업 '해치랩스(주)' 테스트 엔지니어 인턴 <br />
+      2023.09. ~ 2023.10. '로파서울'과 협업하여 전시회 '써치라이트' 소개 사이트 개발
+    </Text>
+  </>)
+}
+
+function SkillsBox({ width }: { width: number }) {
+  return (<Box
+    sx={{
+      flexGrow: 1,
+    }}
+  >
+    <Text weight={700} color={"#00054e"} size={30}>
+      SKILLS
+    </Text>
+    <Space h={20} />
+    <Text
+      weight={700}
+      color={"blue"}
+      size={width > 1500 ? 20 : 16}
+      sx={{
+        lineHeight: 1.8,
+      }}
+    >
+      <a
+        href={"https://reactjs.org/"}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          textDecoration: "none",
+        }}
+      >
+        · React.js{" "}
+      </a>
+      <br />
+      <a
+        href={"https://remix.run/"}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          textDecoration: "none",
+        }}
+      >
+        · Remix
+      </a>
+      <br />
+      <a
+        href={"https://nextjs.org/"}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          textDecoration: "none",
+        }}
+      >
+        · Next.js
+      </a>
+      <br />
+      <a
+        href={"https://firebase.google.com/"}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          textDecoration: "none",
+        }}
+      >
+        · Firebase
+      </a>
+      <br />
+      <a
+        href={"https://flutter.dev/"}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          textDecoration: "none",
+        }}
+      >
+        · Flutter
+      </a>
+      <br />
+      <a
+        href={"https://playwright.dev/"}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          textDecoration: "none",
+        }}
+      >
+        · Playwright
+      </a>
+      <br />
+      <a
+        href={"https://www.java.com/"}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          textDecoration: "none",
+        }}
+      >
+        · Java
+      </a>
+      <br />
+      <a
+        href={"https://unity.com/"}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          textDecoration: "none",
+        }}
+      >
+        · Unity
+      </a>
+      <br />
+      <a
+        href={"https://github.com/taejung1205"}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          textDecoration: "none",
+        }}
+      >
+        · Git
+      </a>
+    </Text>
+  </Box>)
 }

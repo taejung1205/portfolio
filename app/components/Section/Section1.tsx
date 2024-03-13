@@ -45,7 +45,7 @@ export default function Section1() {
       </Box>
       <ReactiveSpace height={200} mdHeight={170} smHeight={100} />
       <Text weight={400} color={"cyan"} size={24}>
-            2023 Portfolio
+            2024 Portfolio
         </Text>
     </Box>
   </Box>

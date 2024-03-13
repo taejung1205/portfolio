@@ -63,7 +63,7 @@ export default function SectionFinal() {
           })}
         >
           <Text weight={400} color={"cyan"} size={24} align={width > 500 ? "left" : "center"}>
-            2023 Portfolio
+            2024 Portfolio
           </Text>
           <Space h={30} />
           <a

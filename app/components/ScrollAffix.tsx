@@ -17,7 +17,7 @@ import {
   }) {
     return (
       <Text
-        size={"sm"}
+        size={"xs"}
         color={"#0b0142"}
         align={"center"}
         sx={{
@@ -107,6 +107,8 @@ import {
                   { text: "EVOCLASS",},
                   { text: "NEWBID",},
                   { text: "LOFA PARTNER",},
+                  { text: "FACEWALLET TE",},
+                  { text: "SEARCHLIGHT",},
                   { text: "OUTRO",},
                 ]}
               />

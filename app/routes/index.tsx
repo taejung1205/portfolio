@@ -3,6 +3,7 @@ import { useMantineTheme } from "@mantine/core";
 import { useScrollIntoView, useViewportSize, useWindowScroll } from "@mantine/hooks";
 import { ScrollAffix } from "~/components/ScrollAffix";
 import Section1 from "~/components/Section/Section1"
+import Section10 from "~/components/Section/Section10";
 import Section2 from "~/components/Section/Section2";
 import Section3 from "~/components/Section/Section3";
 import Section4 from "~/components/Section/Section4";
@@ -10,6 +11,7 @@ import Section5 from "~/components/Section/Section5";
 import Section6 from "~/components/Section/Section6";
 import Section7 from "~/components/Section/Section7";
 import Section8 from "~/components/Section/Section8";
+import Section9 from "~/components/Section/Section9";
 import SectionFinal from "~/components/Section/SectionFinal";
 
 export default function Index() {
@@ -25,6 +27,8 @@ export default function Index() {
   const scrollView6 = useScrollIntoView<HTMLDivElement>({offset: 0});
   const scrollView7 = useScrollIntoView<HTMLDivElement>({offset: 0});
   const scrollView8 = useScrollIntoView<HTMLDivElement>({offset: 0});
+  const scrollView9 = useScrollIntoView<HTMLDivElement>({offset: 0});
+  const scrollView10 = useScrollIntoView<HTMLDivElement>({offset: 0});
   
   return (
     <>
@@ -45,6 +49,10 @@ export default function Index() {
       <div ref={scrollView7.targetRef} />
       <Section8 />
       <div ref={scrollView8.targetRef} />
+      <Section9 />
+      <div ref={scrollView9.targetRef} />
+      <Section10 />
+      <div ref={scrollView10.targetRef} />
       <SectionFinal />
       <ScrollAffix 
       scrollIntoFuncs={[
@@ -56,7 +64,9 @@ export default function Index() {
         scrollView5.scrollIntoView,
         scrollView6.scrollIntoView,
         scrollView7.scrollIntoView,
-        scrollView8.scrollIntoView
+        scrollView8.scrollIntoView,
+        scrollView9.scrollIntoView,
+        scrollView10.scrollIntoView
       ]}
         screenWidth={width}
         isVisible={width > theme.breakpoints.sm}
