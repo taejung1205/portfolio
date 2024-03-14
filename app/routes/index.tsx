@@ -4,6 +4,7 @@ import { useScrollIntoView, useViewportSize, useWindowScroll } from "@mantine/ho
 import { ScrollAffix } from "~/components/ScrollAffix";
 import Section1 from "~/components/Section/Section1"
 import Section10 from "~/components/Section/Section10";
+import Section11 from "~/components/Section/Section11";
 import Section2 from "~/components/Section/Section2";
 import Section3 from "~/components/Section/Section3";
 import Section4 from "~/components/Section/Section4";
@@ -29,6 +30,7 @@ export default function Index() {
   const scrollView8 = useScrollIntoView<HTMLDivElement>({offset: 0});
   const scrollView9 = useScrollIntoView<HTMLDivElement>({offset: 0});
   const scrollView10 = useScrollIntoView<HTMLDivElement>({offset: 0});
+  const scrollView11 = useScrollIntoView<HTMLDivElement>({offset: 0});
   
   return (
     <>
@@ -53,6 +55,8 @@ export default function Index() {
       <div ref={scrollView9.targetRef} />
       <Section10 />
       <div ref={scrollView10.targetRef} />
+      <Section11 />
+      <div ref={scrollView11.targetRef} />
       <SectionFinal />
       <ScrollAffix 
       scrollIntoFuncs={[
@@ -66,12 +70,13 @@ export default function Index() {
         scrollView7.scrollIntoView,
         scrollView8.scrollIntoView,
         scrollView9.scrollIntoView,
-        scrollView10.scrollIntoView
+        scrollView10.scrollIntoView,
+        scrollView11.scrollIntoView
       ]}
         screenWidth={width}
         isVisible={width > theme.breakpoints.sm}
         position={{
-          top: 120,
+          top: 60,
           right: 60
         }}
       />

@@ -26,6 +26,7 @@ export default function Section8() {
         [`@media (max-width: ${theme.breakpoints.md}px)`]: {
           minHeight: "1300px",
           height: "auto",
+          padding: "30px"
         },
       })}
     >

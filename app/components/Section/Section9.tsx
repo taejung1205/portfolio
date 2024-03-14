@@ -8,7 +8,7 @@ import {
 } from "@mantine/core";
 import { useViewportSize } from "@mantine/hooks";
 
-export default function Section8() {
+export default function Section9() {
   const { width } = useViewportSize();
   const theme = useMantineTheme();
   return (
@@ -87,18 +87,19 @@ export default function Section8() {
                 },
               }}
             />
-            <Image
-              src="/images/facewallet2.png"
-              sx={{
-                position: "relative",
-                width: "40%",
-                minWidth: "400px",
-                maxHeight: "30%",
-                [`@media (max-width: ${theme.breakpoints.md}px)`]: {
-                  width: "80%",
-                },
+            <Space h={20} />
+            <a
+              href="https://facewallet.xyz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                textDecoration: "none",
               }}
-            />
+            >
+              <Text color={"#0000FF"} weight={700} size={25} align={"center"}>
+                웹페이지 바로가기
+              </Text>
+            </a>
           </Box>
           <Space w={50} h={50} />
           <Box

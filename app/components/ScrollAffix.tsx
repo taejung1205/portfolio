@@ -109,6 +109,7 @@ import {
                   { text: "LOFA PARTNER",},
                   { text: "FACEWALLET TE",},
                   { text: "SEARCHLIGHT",},
+                  { text: "ETC",},
                   { text: "OUTRO",},
                 ]}
               />

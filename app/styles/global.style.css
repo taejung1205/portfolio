@@ -3,6 +3,8 @@
 * {
   font-family: 'Noto Sans KR', sans-serif !important;
   box-sizing: border-box;
+  word-break: keep-all;
+  text-align: justify;
 }
 
 a:visited {

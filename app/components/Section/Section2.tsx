@@ -25,6 +25,8 @@ export default function Section2() {
         background: "#FFFFFF",
         [`@media (max-width: ${theme.breakpoints.md}px)`]: {
           minHeight: "1750px",
+          height: "auto",
+          padding: "30px"
         },
       })}
     >

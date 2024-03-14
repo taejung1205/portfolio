@@ -18,6 +18,8 @@ export default function Section3() {
         background: "#cdeefc",
         [`@media (max-width: ${theme.breakpoints.md}px)`]: {
           minHeight: "1300px",
+          height: "auto",
+          padding: "30px"
         },
       })}
     >

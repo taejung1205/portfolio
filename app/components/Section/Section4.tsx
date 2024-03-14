@@ -18,6 +18,8 @@ export default function Section4() {
         background: "#dadff7",
         [`@media (max-width: ${theme.breakpoints.md}px)`]: {
           minHeight: "1400px",
+          height: "auto",
+          padding: "30px"
         },
       })}
     >
